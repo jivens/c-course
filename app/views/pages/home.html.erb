@@ -12,7 +12,11 @@
               <%= label_tag(:age_adult, "I'm over 21") %>
           </li>
           <li class='article-title'>
-            <%= text_area_tag(:message, "1. Consider the directory tree shown on the last page of this \r\n exam. Assume that the current directory is me.\r\na. Write a command to create a subdirectory of me called proj06.\r\nSolution: mkdir proj06", size: "80x12") %>
+            <p>1. Consider the directory tree shown on the last page of this </p>
+            <p> exam. Assume that the current directory is me.</p>
+            <p></p>
+            <p>a. Write a command to create a subdirectory of me called proj06.</p>
+            <%= text_area_tag(:message, "Solution: mkdir proj06", size: "80x12") %>
           </li>
           <li class='article-title'>
             <%= number_field(:product, :price, in: 1.0..20.0, step: 0.5) %>
