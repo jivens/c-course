@@ -13,20 +13,20 @@
           </li>
           <li class='article-title'>
             <p><b>1.</b> Consider the directory tree shown on the last page of this <br>
-               exam. Assume that the current directory is <b>me</b.<br>
+               exam. Assume that the current directory is <b>me</b>.<br>
             <br>
             <b>a.</b> Write a command to create a subdirectory of <b>me</b> called <b>proj06</b>.<br>
-            <%= text_area_tag(:solution_1a, "Solution: mkdir proj06", size: "80x12") %>
+            <%= text_area_tag(:solution_1a, "Solution: mkdir proj06", size: "80x3") %>
           </li>
           <li class='article-title'>
             <b>b.</b> Write a command to copy the file <b>example_fun</b> to the
-            newly created directory <b>proj06</b>. <i>Use an absolute path to access example_fun</i>.
-            <%= text_area_tag(:solution_1b, "Solution: cp /home/cs352/example_fun proj06", size: "80x12") %>
+            newly created directory <b>proj06</b>. <i>Use an absolute path to access <b>example_fun</b></i>.
+            <%= text_area_tag(:solution_1b, "Solution: cp /home/cs352/example_fun proj06", size: "80x3") %>
           </li>
           <li class='article-title'>
             <b>c.</b> Write a command to copy the file <b>test_fun</b> to the newly 
-            created directory <b>proj06</b>. Use a relative path to access <b>test_fun</b>.
-            <%= range_field(:product, :discount, in: 1..100) %>
+            created directory <b>proj06</b>. <i>Use a relative path to access <b>test_fun</b></i>.
+            <%= text_area_tag(:solution_1c, "Solution: cp ../cs352/test_fun proj06", size: "80x3") %>
           </li>          
         </div>
       </div>
