@@ -8,26 +8,28 @@
             Consider the directory tree shown on the last page of this exam.<br>
             Assume that the current directory is <b>me</b>.<br>
             <br>
-            <ol class='inner-listing'>
-              <li class='article-body'>
-                Write a command to create a subdirectory of <b>me</b> called <b>proj06</b>.<br>
-                <%= text_area_tag(:solution_1a, "Solution: mkdir proj06", size: "80x3") %>
-                <br><br>
-              </li>
-              <li class='article-body'>
-                Write a command to copy the file <b>example_fun</b> to the
-                newly created directory <b>proj06</b>.<br>
-                <i>Use an absolute path to access <b>example_fun</b></i>.<br>
-                <%= text_area_tag(:solution_1b, "Solution: cp /home/cs352/example_fun proj06", size: "80x3") %>
-                <br><br>
-              </li>
-              <li class='article-body'>
-                Write a command to copy the file <b>test_fun</b> to the newly 
-                created directory <b>proj06</b>.<br>
-                <i>Use a relative path to access <b>test_fun</b></i>.<br>
-                <%= text_area_tag(:solution_1c, "Solution: cp ../cs352/test_fun proj06", size: "80x3") %>
-              </li>
-            </ol>
+            <div class='col-md-offset-1'>
+              <ol class='inner-listing'>
+                <li class='article-body'>
+                  Write a command to create a subdirectory of <b>me</b> called <b>proj06</b>.<br>
+                  <%= text_area_tag(:solution_1a, "Solution: mkdir proj06", size: "80x3") %>
+                  <br><br>
+                </li>
+                <li class='article-body'>
+                  Write a command to copy the file <b>example_fun</b> to the
+                  newly created directory <b>proj06</b>.<br>
+                  <i>Use an absolute path to access <b>example_fun</b></i>.<br>
+                  <%= text_area_tag(:solution_1b, "Solution: cp /home/cs352/example_fun proj06", size: "80x3") %>
+                  <br><br>
+                </li>
+                <li class='article-body'>
+                  Write a command to copy the file <b>test_fun</b> to the newly 
+                  created directory <b>proj06</b>.<br>
+                  <i>Use a relative path to access <b>test_fun</b></i>.<br>
+                  <%= text_area_tag(:solution_1c, "Solution: cp ../cs352/test_fun proj06", size: "80x3") %>
+                </li>
+              </ol>
+            </div>
           </li>          
         </div>
       </div>
