@@ -29,6 +29,22 @@
                   <i>Use a relative path to access <b>test_fun</b></i>.<br>
                   <%= text_area_tag(:solution_1c, "Solution: cp ../cs352/test_fun proj06", size: "80x3") %>
                 </li>
+                <li class='article-body'>
+                  Write a command to make the newly created directory <b>proj6</b>, the working directory.<br>
+                  <%= text_area_tag(:solution_1a, "Solution: cd proj06", size: "80x3") %>
+                  <br><br>
+                </li>
+                <li class='article-body'>
+                  You have now created a new source code file named <b>fun.c</b>, write a command to create an executable 
+                  called <b>fun</b> from it. Be sure your command checks for warnings.<br>
+                  <%= text_area_tag(:solution_1b, "Solution: gcc -Wall fun.c -o fun", size: "80x3") %>
+                  <br><br>
+                </li>
+                <li class='article-body'>
+                  Assume both <b>fun</b> and <b>example_fun</b> read from stdin and write to stdout. Write commands to compare the 
+                  outputs of these two programs when given inputs <b>test_fun</b> (all these files are in the current directory).<br>
+                  <%= text_area_tag(:solution_1c, "Solution: \ncp ../cs352/test_fun proj06\nfun < test_fun > mine.log\nexample_fun < test_fun > example.log\ndiff example.log mine.log", size: "80x3") %>
+                </li>
               </ol>
             </div>
           </li>          
