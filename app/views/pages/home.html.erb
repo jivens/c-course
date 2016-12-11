@@ -48,6 +48,54 @@
               </ol>
             </div>
           </li>          
+          <li class='article-body'>
+            Suppose that the following declarations are in effect:
+            int a[8];<br>
+            a[0] = 7;<br>
+            a[1] = 3;<br>
+            a[2] = 21;<br>
+            a[3] = 14;<br>
+            a[4] = 5;<br>
+            a[5] = 20;<br>
+            a[6] = 9;<br>
+            a[7] = 11;<br>
+            int *p = a, *q = &a[6];<br>
+            <br>
+            <div class='col-md-offset-1'>
+              <ol class='inner-listing'>
+                <li class='article-body'>
+                  What is the value of *(p+3)?<br>
+                  <%= text_area_tag(:solution_1a, "Solution: 14", size: "80x3") %>
+                  <br><br>
+                </li>
+                <li class='article-body'>
+                  What is the value of *(q-3)?<br>
+                  <%= text_area_tag(:solution_1b, "Solution: 14", size: "80x3") %>
+                  <br><br>
+                </li>
+                <li class='article-body'>
+                  Is the condition *p < *q true or false?<br>
+                  <%= text_area_tag(:solution_1c, "Solution: true", size: "80x3") %>
+                </li>
+                <li class='article-body'>
+                  Write a command to make the newly created directory <b>proj6</b>, the working directory.<br>
+                  <%= text_area_tag(:solution_1a, "Solution: cd proj06", size: "80x3") %>
+                  <br><br>
+                </li>
+                <li class='article-body'>
+                  After the following statements are executed what are<br>
+                  the values of the array a?<br>
+                  *p = *q – 1;<br>
+                  p += 1;<br>
+                  *p = *(q - 1);<br>
+                  p = p + 2;<br>
+                  (*p)++;<br>
+                  <%= text_area_tag(:solution_1b, "Solution: 7  3  21 14 5  20 9  11\np                 q\n8  3  21 14 5  20 9  11      // *p = *q – 1;\np                 q\n8  3  21 14 5  20 9  11      // p += 1;\np              q\n8  20 21 14 5  20 9  11      // *p = *(q - 1);\np              q\n8  20 21 14 5  20 9  11      // p = p + 2;\np        q\n8  20 21 15 5  20 9  11      // (*p)++;\np        q", size: "80x3") %>
+                  <br><br>
+                </li>
+              </ol>
+            </div>
+          </li>          
         </div>
       </div>
     </ol>
